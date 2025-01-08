@@ -9,10 +9,8 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url(https://wallpapercave.com/wp/wp12980965.jpg);
+            background: url(https://wallpapercave.com/wp/wp12980965.jpg) no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
             color: white;
             display: flex;
             flex-direction: column;
@@ -74,6 +72,10 @@
 
         /* Responsives Design */
         @media (max-width: 768px) {
+            body {
+                background-position: top center;
+            }
+
             header h1 {
                 font-size: 2em;
             }
